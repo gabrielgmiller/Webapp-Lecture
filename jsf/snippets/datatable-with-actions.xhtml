@@ -1,0 +1,19 @@
+<p:dataTable id="table" value="#{productBean.books}" var="b">
+    <p:column headerText="Title">
+        <h:outputText value="#{b.title}" />
+    </p:column>
+
+    <p:column headerText="First Author">
+        <h:outputText value="#{b.firstAuthor}" />
+    </p:column>
+
+    <p:column headerText="Actions">
+        <p:commandLink value="Add to cart"
+                       action="#{shoppingCartBean.addToCart(b)}"
+                       update="table msgs" process="@this"/>
+        <span>&nbsp;|&nbsp;</span>
+        <p:commandLink value="Details"
+                       action="#{shoppingCartBean.showDetails(b)}"
+                       process="@this"/>
+    </p:column>
+</p:dataTable>
