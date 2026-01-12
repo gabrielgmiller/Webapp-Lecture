@@ -1,0 +1,23 @@
+<!-- Required -->
+<p:inputText id="title" value="#{bookBean.title}" required="true"
+             requiredMessage="Title is required." />
+
+<!-- Min length (>= 2) using f:validateLength -->
+<p:inputText id="firstName" value="#{authorBean.firstName}">
+    <f:validateLength minimum="2"/>
+</p:inputText>
+<p:message for="firstName"/>
+
+<!-- Regex pattern (e.g., ISBN digits and '-') -->
+<p:inputText id="isbn" value="#{bookBean.isbn}" required="true"
+             requiredMessage="ISBN is required.">
+    <f:validateRegex pattern="[0-9\-]+"/>
+</p:inputText>
+<p:message for="isbn"/>
+
+<!-- Positive number (simple pattern; project may use p:inputNumber) -->
+<p:inputText id="price" value="#{bookBean.price}" required="true"
+             requiredMessage="Price is required.">
+    <f:validateDoubleRange minimum="0.01"/>
+</p:inputText>
+<p:message for="price"/>
