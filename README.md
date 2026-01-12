@@ -19,6 +19,7 @@ The exam consists of:
   **Form → Read data → Validation → List → Details**
 
 ## Repository Structure
+<pre>
 webapp-lecture-exam/
 ├── exam-checklist/        # Exam-oriented checklists
 ├── jsf/                   # JSF examples, snippets and exercises
@@ -26,6 +27,7 @@ webapp-lecture-exam/
 ├── docs/                  # Setup and short notes
 ├── assets/pdfs/           # Slides, exercises and exam information
 └── README.md
+</pre>
 
 ## Technologies
 - Java 21+
