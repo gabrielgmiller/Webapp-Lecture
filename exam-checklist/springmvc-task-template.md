@@ -60,10 +60,9 @@ public class __________Form {
 
 }
 
+---
 
-⸻
-
-4) Controller skeleton (copy-ready)
+## 4) Controller skeleton (copy-ready)
 
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
@@ -118,7 +117,7 @@ public class __________Controller {
 
 ⸻
 
-5) Validation (minimal patterns)
+## 5) Validation (minimal patterns)
 
 @NotNull
 private Integer __________;
@@ -132,7 +131,7 @@ private Integer __________;
 
 ⸻
 
-6) Templates (minimum checklist)
+## 6) Templates (minimum checklist)
 
 Form — form.ftl
 	•	<form method="post" action="/__________">
@@ -150,7 +149,7 @@ Details — details.ftl
 
 ⸻
 
-7) Compile-safe checklist (MANDATORY)
+## 7) Compile-safe checklist (MANDATORY)
 	•	BindingResult comes immediately after the @Valid parameter
 	•	Template names match exactly:
 	•	return "form" → form.ftl
@@ -161,10 +160,7 @@ Details — details.ftl
 
 ⸻
 
-8) End-of-task command
+## 8) End-of-task command
 	•	mvn -q test or mvn -q package
 
 ---
-
-
-Quando confirmar que **esse arquivo está ok**, seguimos para o **JSF Task Template (finalizar Passo 2)** ou já partimos direto pro **Passo 3 (Snippets atômicos)** — você escolhe.
