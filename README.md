@@ -3,6 +3,11 @@
 This repository contains all materials required to prepare for the **Web Applications** exam.
 It is focused on **practical programming tasks** using **JSF** and **Spring MVC**, following the exact structure and patterns used in the examination.
 
+## Exam
+- [EXAM INDEX](EXAM_INDEX.md)
+- [Exam Quickstart](docs/00-EXAM-QUICKSTART.md)
+
+
 ## Purpose
 The goal of this repository is to provide:
 - A clear structure aligned with the exam format
