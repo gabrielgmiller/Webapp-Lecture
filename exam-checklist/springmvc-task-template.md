@@ -59,11 +59,12 @@ public class __________Form {
   }
 
 }
-
+```
 ---
 
 ## 4) Controller skeleton (copy-ready)
 
+```
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -113,12 +114,12 @@ public class __________Controller {
     return "__________"; // details.ftl
   }
 }
-
+```
 
 ⸻
 
 ## 5) Validation (minimal patterns)
-
+```
 @NotNull
 private Integer __________;
 
@@ -128,11 +129,11 @@ private String __________;
 @Min(0)
 private Integer __________;
 
-
+```
 ⸻
 
 ## 6) Templates (minimum checklist)
-
+```
 Form — form.ftl
 	•	<form method="post" action="/__________">
 	•	Inputs must bind to: form.fieldName
@@ -146,10 +147,11 @@ List — list.ftl
 
 Details — details.ftl
 	•	Read from item.field
-
+```
 ⸻
 
 ## 7) Compile-safe checklist (MANDATORY)
+```
 	•	BindingResult comes immediately after the @Valid parameter
 	•	Template names match exactly:
 	•	return "form" → form.ftl
@@ -157,10 +159,12 @@ Details — details.ftl
 	•	form, results, item
 	•	All service methods exist and compile
 	•	No unused imports
+```
 
 ⸻
 
 ## 8) End-of-task command
+```
 	•	mvn -q test or mvn -q package
-
+```
 ---
