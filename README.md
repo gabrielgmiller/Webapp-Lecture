@@ -5,7 +5,7 @@ It is focused on **practical programming tasks** using **JSF** and **Spring MVC*
 
 ## Exam
 - [EXAM INDEX](EXAM_INDEX.md)
-- [Exam Quickstart](docs/00-EXAM-QUICKSTART.md)
+- [Exam Quickstart](docs/quick-notes/00-EXAM-QUICKSTART.md)
 
 
 ## Purpose
